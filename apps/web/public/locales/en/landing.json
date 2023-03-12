@@ -1,0 +1,8 @@
+{
+  "HERO_TITLE": "<InlineBlock>Group All Wallets</InlineBlock> <InlineBlock>Regardless of Blockchains.</InlineBlock>",
+  "HERO_DESC": "Easily Track and Manage Your Assets with ShibTools, <InlineBlock>the Web3 Dashboard.</InlineBlock>",
+  "BACKGROUND_DESC": "Dashboard services available today are limited to three categories: those linked to particular layer-1 chains, those created by the same development team or supported by shared VCs, and those kept as proprietary software. These limitations restrain their capacity to expand beyond their respective ecosystems.",
+  "DASHBOARD_PARA_1": "ShibTools is an open-source web3 dashboard in that users can add multiple wallets and group their crypto assets into one.",
+  "DASHBOARD_PARA_2": "Investing in DeFi? View not only balances but your stakes for various protocols as well.",
+  "STATUS_QUO_DESC": "Exactly. Users are entirely different from wallets, <br />a more extensive concept by itself. <br />But current web3 products treat them the same. <br />In the cross-chain universe, user activities and assets no longer remain in one address or chain."
+}

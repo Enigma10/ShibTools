@@ -1,0 +1,15 @@
+.next
+.vercel
+
+# Yarn
+.yarn
+.pnp.cjs
+.pnp.loader.mjs
+
+# Built files
+dist
+build
+lib
+
+# scripts
+scripts/assets/trustwallet-assets
