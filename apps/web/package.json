@@ -37,6 +37,7 @@
     "dedent": "^0.7.0",
     "file-saver": "^2.0.5",
     "framer-motion": "^7.6.1",
+    "http": "^0.0.1-security",
     "immer": "^9.0.16",
     "javascript-time-ago": "^2.5.7",
     "jotai": "^1.8.6",

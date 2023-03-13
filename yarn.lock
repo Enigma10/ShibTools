@@ -686,6 +686,7 @@ __metadata:
     env-cmd: ^10.1.0
     file-saver: ^2.0.5
     framer-motion: ^7.6.1
+    http: ^0.0.1-security
     immer: ^9.0.16
     javascript-time-ago: ^2.5.7
     jotai: ^1.8.6
@@ -6654,7 +6655,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"http@npm:0.0.1-security":
+"http@npm:0.0.1-security, http@npm:^0.0.1-security":
   version: 0.0.1-security
   resolution: "http@npm:0.0.1-security"
   checksum: c45a4e2771b5679b479b24150216e0b423d5bf2f94062c91b4b5e5347ed3f18b8c049e220df6e328c34ac5aab0d020600a05a9ea954bc7a7efc04d8dde7aada0
