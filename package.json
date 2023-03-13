@@ -29,5 +29,8 @@
     "bignumber.js": "9.0.2",
     "node-fetch": "2.6.8"
   },
-  "packageManager": "yarn@3.2.4"
+  "packageManager": "yarn@3.2.4",
+  "dependencies": {
+    "next": "13.0.1-canary.2"
+  }
 }
