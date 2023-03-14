@@ -28,7 +28,7 @@ export const Config: Secrets = {
     '',
   SUPABASE_URL: 'https://rtvnlzutgyxkvybklqdu.supabase.co' || '',
   API_BASE_URL: 'https://shib-tools-web.vercel.app/' || '',
-  OPENSEA_API_KEYS: 'dce17131f0e941d5909993a381222190'),
+  OPENSEA_API_KEYS: ['dce17131f0e941d5909993a381222190'],
   CMC_PRO_API_KEYS: splitAPIKeys('99131b13-0da1-4ffe-8ccb-a9eac0d2f2db'),
   ...HARDCODED_SECRETS,
 };
