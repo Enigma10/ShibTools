@@ -165,9 +165,9 @@ const getEnvironment = () => {
   if (!isBrowser) {
     return '';
   }
-  return window.location.host.includes('localhost')
+  return window.location.host.includes('shib-tools-web.vercel.app')
     ? 'debug'
-    : window.location.host.includes('shib-tools-web.vercel.app')
+    : window.location.host.includes('shib.tools')
     ? 'production'
     : 'development';
 };

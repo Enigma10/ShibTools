@@ -23,11 +23,13 @@ export const splitAPIKeys = (value: string | undefined) =>
   value?.split(',') || [];
 
 export const Config: Secrets = {
-  SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '',
-  SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL || '',
-  API_BASE_URL: process.env.NEXT_PUBLIC_API_BASE_URL || '',
-  OPENSEA_API_KEYS: splitAPIKeys(process.env.NEXT_PUBLIC_OPENSEA_API_KEYS),
-  CMC_PRO_API_KEYS: splitAPIKeys(process.env.NEXT_PUBLIC_CMC_PRO_API_KEYS),
+  SUPABASE_ANON_KEY:
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ0dm5senV0Z3l4a3Z5YmtscWR1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg2MDc2MjgsImV4cCI6MTk5NDE4MzYyOH0.WpSBAz_fg3eKaH6IL_4bUq-3iUKv7Urxc6TSe10UU58' ||
+    '',
+  SUPABASE_URL: 'https://rtvnlzutgyxkvybklqdu.supabase.co' || '',
+  API_BASE_URL: 'https://shib-tools-web.vercel.app/' || '',
+  OPENSEA_API_KEYS: 'dce17131f0e941d5909993a381222190'),
+  CMC_PRO_API_KEYS: splitAPIKeys('99131b13-0da1-4ffe-8ccb-a9eac0d2f2db'),
   ...HARDCODED_SECRETS,
 };
 

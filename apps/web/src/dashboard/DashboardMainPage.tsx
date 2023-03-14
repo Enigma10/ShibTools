@@ -82,7 +82,9 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   }
 
   const { data } = await axios
-    .get<BentoUserResponse>(`${Config.API_BASE_URL}/users/${usernameOrId}`)
+    .get<BentoUserResponse>(
+      `http://shib-tools-web.vercel.app/users/${usernameOrId}`,
+    )
     .catch((e) => {
       console.error(e);
       return { data: null };
