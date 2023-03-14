@@ -13,11 +13,11 @@
     "routes": [
         {
             "src": "/api/(.*)",
-            "dest": "apps/api/src/routes/$1"
+            "dest": "/apps/api/src/routes/$1"
         },
         {
             "src": "/(.*)",
-            "dest": "apps/web/$1"
+            "dest": "/apps/web/$1"
         }
     ]
 }
