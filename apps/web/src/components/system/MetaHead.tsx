@@ -5,8 +5,8 @@ const meta = {
   title: 'ShibTools | Your Cross-chain Web3 Dashboard',
   description:
     'The open-source, cross-chain web3 dashboard. Add multiple wallets, group your crypto—native tokens, DAOs, and NFTs—into one, and keep track of your favorite DeFi investments.',
-  image: 'https://shibtools.finance/assets/og-image-v2.jpg',
-  url: 'https://shibtools.finance',
+  image: 'https://shib-tools-web.vercel.app/assets/og-image-v2.jpg',
+  url: 'https://shib-tools-web.vercel.app',
 };
 
 type MetaHeadProps = {

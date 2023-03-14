@@ -8,7 +8,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     const cookies = Supabase.auth.api.getAuthCookieString(req, res);
     res.setHeader(
       'Set-Cookie',
-      cookies.map((cookie) => `${cookie}; Domain=bento.finance`),
+      cookies.map((cookie) => `${cookie}; Domain=shib-tools-web.vercel.app`),
     );
     res.status(200).json({ message: 'ok' });
   } else {

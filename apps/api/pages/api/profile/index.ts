@@ -39,7 +39,7 @@ const notifySlack = async (user: User, profile: UserProfile) => {
         ? `https://twitter.com/${user.user_metadata.user_name}`
         : `https://github.com/${user.user_metadata.user_name}`,
       user_id: user.id,
-      profile_url: `https://www.bento.finance/u/${profile.username}`,
+      profile_url: `https://shib-tools-web.vercel.app/u/${profile.username}`,
       joined_at: getKoreanTimestring(user.created_at),
     })
     .catch((e) => {

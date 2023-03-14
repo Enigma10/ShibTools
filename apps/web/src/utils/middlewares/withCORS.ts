@@ -8,7 +8,6 @@ type APIHandler = <T extends NextApiResponse = NextApiResponse>(
 const ALLOWED_ORIGINS = [
   'https://shib.tools/',
   'https://shib-tools-web.vercel.app/',
-  'http://localhost:3000',
 ];
 
 export const withCORS =

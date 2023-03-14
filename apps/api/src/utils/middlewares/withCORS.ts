@@ -5,7 +5,10 @@ type APIHandler = <T extends NextApiResponse = NextApiResponse>(
   res: T,
 ) => void | Promise<void>;
 
-const ALLOWED_ORIGINS = ['https://bento.finance', 'http://localhost:3000'];
+const ALLOWED_ORIGINS = [
+  'https://shib-tools-web.vercel.app',
+  'https://shib.tools',
+];
 
 export const withCORS =
   (apiHandler: APIHandler): APIHandler =>
@@ -13,8 +16,8 @@ export const withCORS =
     const origin = req.headers.origin || '';
     if (
       ALLOWED_ORIGINS.includes(origin) ||
-      origin.endsWith('bento.finance') ||
-      origin.endsWith('inevitable-ch.vercel.app')
+      origin.endsWith('shib.tools') ||
+      origin.endsWith('shib-tools-web.vercel.app')
     ) {
       res.setHeader('Access-Control-Allow-Origin', origin);
     }
