@@ -69,7 +69,7 @@ export const DashboardIntro: React.FC<DashboardIntroProps> = ({ session }) => {
           alignItems: 'center',
         }}
       >
-        <Badge>⚡ ShibTools.Finance</Badge>
+        <Badge>⚡ Shib.Tools</Badge>
         <h1
           style={{
             marginTop: 16,

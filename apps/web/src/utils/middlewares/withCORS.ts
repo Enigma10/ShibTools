@@ -5,7 +5,11 @@ type APIHandler = <T extends NextApiResponse = NextApiResponse>(
   res: T,
 ) => void | Promise<void>;
 
-const ALLOWED_ORIGINS = ['https://shibtools.finance', 'http://localhost:3000'];
+const ALLOWED_ORIGINS = [
+  'https://shib.tools/',
+  'https://shib-tools-web.vercel.app/',
+  'http://localhost:3000',
+];
 
 export const withCORS =
   (apiHandler: APIHandler): APIHandler =>
@@ -13,8 +17,8 @@ export const withCORS =
     const origin = req.headers.origin || '';
     if (
       ALLOWED_ORIGINS.includes(origin) ||
-      origin.endsWith('shibtools.finance') ||
-      origin.endsWith('shibtools.vercel.app')
+      origin.endsWith('shib.tools') ||
+      origin.endsWith('https://shib-tools-web.vercel.app/')
     ) {
       res.setHeader('Access-Control-Allow-Origin', origin);
     }

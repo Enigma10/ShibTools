@@ -64,7 +64,7 @@ const notifySlack = async (user: User, username: string) => {
         ? `https://twitter.com/${user.user_metadata.user_name}`
         : `https://github.com/${user.user_metadata.user_name}`,
       user_id: user.id,
-      profile_url: `https://www.shibtools.finance/u/${username}`,
+      profile_url: `https://shib-tools-web.vercel.app/u/${username}`,
       joined_at: getKoreanTimestring(user.created_at),
     })
     .catch((e) => {
@@ -314,7 +314,9 @@ const DashboardPage = (props: Props) => {
         <link
           key="canonical"
           rel="canonical"
-          href={`https://shibtools.finance${router.asPath.split('?')[0]}`}
+          href={`https://shib-tools-web.vercel.app${
+            router.asPath.split('?')[0]
+          }`}
         />
 
         {description.length > 0 && (

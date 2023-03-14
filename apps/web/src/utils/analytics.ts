@@ -167,7 +167,7 @@ const getEnvironment = () => {
   }
   return window.location.host.includes('localhost')
     ? 'debug'
-    : window.location.host.includes('shibtools.finance')
+    : window.location.host.includes('shib-tools-web.vercel.app')
     ? 'production'
     : 'development';
 };

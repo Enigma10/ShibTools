@@ -174,7 +174,9 @@ const WalletDashboardPage = ({ walletType, account }: Props) => {
         <link
           key="canonical"
           rel="canonical"
-          href={`https://shibtools.finance${router.asPath.split('?')[0]}`}
+          href={`https://shib-tools-web.vercel.app${
+            router.asPath.split('?')[0]
+          }`}
         />
 
         {description.length > 0 && (
