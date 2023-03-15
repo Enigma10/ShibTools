@@ -117,8 +117,8 @@ export const WalletConnector: React.FC<WalletSelectorProps> = ({
         }
       >
         <IconList>
-          <img src={WALLETS.MetaMask} alt={t('MetaMask')} />
-          <img src={WALLETS.WalletConnect} alt={t('WalletConnect')} />
+          <img src={WALLETS.MetaMask} alt={t('MetaMask') as string} />
+          <img src={WALLETS.WalletConnect} alt={t('WalletConnect') as string} />
         </IconList>
         <span className="title">
           {`${t('MetaMask')}/${t('WalletConnect')}`}
