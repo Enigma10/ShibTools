@@ -134,7 +134,7 @@ export const WalletConnector: React.FC<WalletSelectorProps> = ({
         }
       >
         <IconList>
-          <img src={WALLETS.Kaikas} alt={t('Kaikas')} />
+          <img src={WALLETS.Kaikas} alt={t('Kaikas') as string} />
         </IconList>
         <span className="title">{t('Kaikas')}</span>
       </WalletButton>
@@ -148,7 +148,7 @@ export const WalletConnector: React.FC<WalletSelectorProps> = ({
         }
       >
         <IconList>
-          <img src={WALLETS.Keplr} alt={t('Keplr')} />
+          <img src={WALLETS.Keplr} alt={t('Keplr') as string} />
         </IconList>
         <span className="title">{t('Keplr')}</span>
       </WalletButton>
@@ -162,7 +162,7 @@ export const WalletConnector: React.FC<WalletSelectorProps> = ({
         }
       >
         <IconList>
-          <img src={WALLETS.Phantom} alt={t('Phantom')} />
+          <img src={WALLETS.Phantom} alt={t('Phantom') as string} />
         </IconList>
         <span className="title">{t('Phantom')}</span>
       </WalletButton>
