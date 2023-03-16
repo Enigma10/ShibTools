@@ -52,7 +52,7 @@ export const ProfileEditor: React.FC<Props> = ({
       />
       <FieldInput
         field={t('Username')}
-        placeholder={t('username (will be shown after @)')}
+        placeholder={t('username (will be shown after @)') as string}
         defaultValue={draft.username}
         onKeyDown={onKeyDown}
         onChange={(e) => setDraft((v) => ({ ...v, username: e.target.value }))}
