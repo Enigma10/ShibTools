@@ -77,7 +77,7 @@ export const AddWalletModal: React.FC<AddWalletModalProps> = ({
                         : undefined
                     }
                   >
-                    <img src={network.logo} alt={t(network.name)} />
+                    <img src={network.logo} alt={t(network.name) as string} />
                     <div className="name-container">
                       <span className="name">{t(network.name)}</span>
                     </div>
