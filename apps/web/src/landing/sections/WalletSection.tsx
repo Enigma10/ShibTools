@@ -61,7 +61,7 @@ export const WalletSection: React.FC<TrackedSectionOptions> = ({
             {Object.entries(WALLETS).map(([alt, src]) => (
               <motion.li key={src} variants={CARD_WALLET_ITEM}>
                 <AnimatedToolTip placement="bottom" label={tc(alt)}>
-                  <WalletIcon alt={tc(alt)} src={src} />
+                  <WalletIcon alt={tc(alt) as string} src={src} />
                 </AnimatedToolTip>
               </motion.li>
             ))}
